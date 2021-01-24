@@ -3,10 +3,12 @@ package book.web.servlet;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@WebServlet(description = "用户登出", urlPatterns = { "/logOut" })
 public class LogOutServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 6780130568397832391L;

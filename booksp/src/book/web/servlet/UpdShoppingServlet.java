@@ -17,7 +17,11 @@ import book.entity.business.BBook;
  */
 @WebServlet(description = "处理购物车支付", urlPatterns = { "/UpdShopping" })
 public class UpdShoppingServlet extends DataSourceServlet {
-	private static final long serialVersionUID = 1L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8814335706668358145L;
 
 	public UpdShoppingServlet() {
 		super();

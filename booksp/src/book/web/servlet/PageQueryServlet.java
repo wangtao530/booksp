@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -12,6 +13,7 @@ import book.entity.Book;
 import book.service.impl.ServiceImpl;
 import book.util.PageSupport;
 
+@WebServlet(description = "分页查询图书", urlPatterns = { "/pgQue" })
 public class PageQueryServlet extends DataSourceServlet {
 
 	private static final long serialVersionUID = 7215019873333459228L;

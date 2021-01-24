@@ -19,7 +19,11 @@ import book.util.PageSupport;
  */
 @WebServlet(description = "用户以往的订单查询", urlPatterns = { "/OrdersPageQuery" })
 public class OrdersPageQueryServlet extends DataSourceServlet {
-	private static final long serialVersionUID = 1L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4464181176016111097L;
 
 	/**
 	 * Default constructor.

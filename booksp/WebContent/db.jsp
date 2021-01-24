@@ -17,6 +17,7 @@ select username, email from userInfo
 <c:forEach var="row" items="${rs.rows}">
     姓名： ${row.username} 邮箱：${row.email}<br/>
 </c:forEach>
-
+<!-- 取得项目的绝对路径 -->
+<%=request.getServletContext().getRealPath("") %>
   </body>
 </html>

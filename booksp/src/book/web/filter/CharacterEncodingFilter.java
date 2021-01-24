@@ -8,7 +8,9 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
 
+@WebFilter(description = "设置请求响应编码", urlPatterns = { "/*" })
 public class CharacterEncodingFilter implements Filter {
 
 	@Override
@@ -25,6 +27,7 @@ public class CharacterEncodingFilter implements Filter {
 		chain.doFilter(request, response);
 		// 设置响应时的编码方式
 		response.setCharacterEncoding("UTF-8");
+		System.out.println("设置请求响应时的编码方式");
 	}
 
 	@Override

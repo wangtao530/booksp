@@ -15,9 +15,13 @@ import book.util.VerifyCode;
  */
 @WebServlet(description = "生成验证码", urlPatterns = { "/ValidateCode" })
 public class ValidateCodeServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
        
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2264837170291813650L;
+
+	/**
      * @see HttpServlet#HttpServlet()
      */
     public ValidateCodeServlet() {

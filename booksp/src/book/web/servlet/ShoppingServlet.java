@@ -6,6 +6,7 @@ import java.util.List;
 //import java.util.function.Consumer;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpSession;
 
 import book.entity.business.BBook;
 
+@WebServlet(description = "商品添加到购物车", urlPatterns = { "/shopping" })
 public class ShoppingServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 6780130568397832391L;
@@ -84,7 +86,7 @@ public class ShoppingServlet extends HttpServlet {
 //				}
 //			});
 			// 遍历集合方式
-	//		b_list.forEach(System.out::println);
+			// b_list.forEach(System.out::println);
 			// 遍历集合方式
 //			Iterator<BBook> it = b_list.iterator();
 //			while (it.hasNext()) {

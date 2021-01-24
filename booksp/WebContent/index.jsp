@@ -54,7 +54,5 @@
 			</dl>
 		</form>
 	</div>
-<!-- 取得项目的绝对路径 -->
-<%=request.getServletContext().getRealPath("") %>
 </body>
 </html>

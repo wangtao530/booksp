@@ -25,7 +25,11 @@ import book.service.impl.ServiceImpl;
  */
 @WebServlet(description = "处理购物车支付", urlPatterns = { "/PayShoppingServlet" })
 public class PayShoppingServlet extends DataSourceServlet {
-	private static final long serialVersionUID = 1L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3501317135348623899L;
 
 	public PayShoppingServlet() {
 		super();

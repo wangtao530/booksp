@@ -12,9 +12,13 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(description = "专用于注册时验证用户名唯一性", urlPatterns = { "/VerifyUserServlet" })
 public class VerifyUserServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
        
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7445019304402323826L;
+
+	/**
      * @see HttpServlet#HttpServlet()
      */
     public VerifyUserServlet() {
