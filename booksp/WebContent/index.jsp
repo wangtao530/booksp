@@ -40,7 +40,7 @@
 				<dd>
 					<input class="input-text" type="text" name="yzm"
 						id="yzm" value="" /><span id="yzmSP"></span>
-						<img src="./validateCode.jsp" alt="验证码" />
+						<img src="./ValidateCode" alt="验证码" onclick="this.src=this.src+'?'+Math.random()" id="img"/><a href="#" onclick="document.getElementById('img').onclick()">&nbsp;换?</a>
 				</dd>
 				<dt></dt>
 				<dd class="button">
@@ -48,8 +48,9 @@
 						class="input-reg" type="button" name="register" value=""
 						onclick="window.location='<%=request.getContextPath()%>/jsp/register.jsp'" />
 				</dd>
-				<c:out value="${mess }" />
-				<c:remove var="mess" />
+			<%-- 	<%=request.getParameter("mess") %> --%>
+				<c:out value="${param.mess }" />
+			<%-- 	<c:remove var="mess" /> --%>
 			</dl>
 		</form>
 	</div>
