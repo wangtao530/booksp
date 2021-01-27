@@ -30,7 +30,7 @@
 				<li class="unpass">2.注册成功</li>
 			</ul>
 		</div>
-		<form method="post" id="regForm" action="${pageContext.request.contextPath }/regr">
+		<form method="post" id="regForm" action="${pageContext.request.contextPath }/regr.do">
 			<dl>
 				<dt>用 户 名：</dt>
 				<dd>

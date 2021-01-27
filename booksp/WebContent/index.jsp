@@ -13,7 +13,7 @@
 <body>
 	<div id="login">
 		<h2>用户登陆</h2>
-		<form id="loginForm" method="post" action="<%=request.getContextPath()%>/login">
+		<form id="loginForm" method="post" action="<%=request.getContextPath()%>/login.do">
 
 			<input type="hidden" id="checkName" name="checkName" value="#" />
 			<dl>

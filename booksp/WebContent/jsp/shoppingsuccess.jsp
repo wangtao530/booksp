@@ -17,7 +17,7 @@
 					<li id="mark"><a href="../pgQue">首页</a></li>
 					<li><a href="../OrdersPageQuery">我的订单</a></li>
 					<li class="current"><a href="shopping.jsp">购物车</a></li>
-					<li><a href="../logOut">注销</a></li>
+					<li><a href="../logOut.do">注销</a></li>
 				</ul>
 			</div>
 			<form method="get" name="search" action="">

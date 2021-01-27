@@ -22,6 +22,7 @@ public class QueryServlet extends DataSourceServlet {
 		doPost(req, resp);
 	}
 
+	/**查询所有图书*/
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
